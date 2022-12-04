@@ -16,7 +16,7 @@ public class Elf {
     @NonNull
     private final List<Food> foods;
 
-    int getCaloriesCarried() {
+    public int getCaloriesCarried() {
         return foods.stream().collect(Collectors.summingInt(Food::getCalories));
     }
 
